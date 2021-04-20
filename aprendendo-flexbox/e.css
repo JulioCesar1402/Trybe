@@ -1,0 +1,8 @@
+  /* .elemento classe:nth-child(numero ordenado do elemento) { */
+       /* ? 1 - flex-grow: numero; -> aumenta o tamanho do item selecionado */
+       /* ? 2 - flex-shrink: numero; -> diminui o tamanho do item selecionado */
+       /* ? 3 - flex-basis: auto; -> da ao elemento um tamanho inicial que se adapta conforme o que houver dentro; */
+       /* *flex: grow, shrink, basis */
+       /* *ou */
+       /* *flex: grow, basis */
+   /* } */
