@@ -9,3 +9,10 @@ Um espaço para armazenar dos exercicios da trybe
 * O uso do var pode causar em fasamento do escolpo e por isso foi criado o let - 05:37
 
 * const é um valor constante, não podendo ser mudado por um for
+
+* É possivel alterar a const de um objeto se for atravez de sua propriedade
+Ex: objeto: 'const estudante = {}'
+    propriedade: 'estudante.idade = 24'
+
+
+* Sempre use const, a menos que sinta necessidade de um let
