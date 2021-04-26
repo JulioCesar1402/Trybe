@@ -44,3 +44,6 @@ userInfo.name = "João"
 Seja através de um push: 
 
 technologies.push('React');
+
+***
+* Portanto é recomendado que se use const sempre que possivel e que se evite o uso de var
