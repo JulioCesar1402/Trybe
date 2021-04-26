@@ -16,3 +16,5 @@ Ex: objeto: 'const estudante = {}'
 
 
 * Sempre use const, a menos que sinta necessidade de um let
+
+### var pode ser sobrescrito sem gerar erros!
