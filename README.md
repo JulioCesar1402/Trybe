@@ -47,3 +47,12 @@ technologies.push('React');
 
 ***
 * Portanto é recomendado que se use const sempre que possivel e que se evite o uso de var
+
+***
+
+# Nova forma de concatenar strings
+
+* Deixar console.log('Hello' + ' ' + myName + '!');
+* Utilizar console.log(`Welcome ${myName}!`);
+* não esquecer de usar `` no lugar de '' 
+* e, por fim, não é mais necessario o sudo de \n para quebrar linha
