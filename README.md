@@ -18,3 +18,18 @@ Ex: objeto: 'const estudante = {}'
 * Sempre use const, a menos que sinta necessidade de um let
 
 ### var pode ser sobrescrito sem gerar erros!
+* em contra partida, se substituir o var por um let ou por const irar aparecer um erro
+
+***
+## O uso uso de const e let
+* diferente do let, a const não pode ter seu valor reatribuido 
+
+ex:
+
+const favoriteLanguage = "Javascript";
+favoriteLanguage = "Python";
+console.log(favoriteLanguage); // retorna erro
+
+let favoriteTechnology = "Machine learning";
+favoriteTechnology = "Facial recognition";
+console.log(favoriteTechnology); // retorna a alteração "Facial recognition"
