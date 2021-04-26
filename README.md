@@ -70,3 +70,11 @@ technologies.push('React');
 
 ## botando em pratica - 04:46
 * quando for usar um objeto, colorque-o entre "()"
+
+# ternary operator
+
+* estrutura: x ? y : z;
+  * x é a condição que será avaliada como verdadeira ou falsa
+  * y é o retorno se for verdadeira
+  * z é o retorno se for falsa
+* Um bom substituto para if/else ou switch caso seja questão de verdadeiro ou false. Agora se necessitar de mais verificações/condições ele não será muito util, pois dificultará na leitura, indo contra o seu intuito de uso e pode ser que não funicone adequadamente!
