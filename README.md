@@ -33,3 +33,14 @@ console.log(favoriteLanguage); // retorna erro
 let favoriteTechnology = "Machine learning";
 favoriteTechnology = "Facial recognition";
 console.log(favoriteTechnology); // retorna a alteração "Facial recognition"
+
+***
+* Quando se trata de objetos e de arrays, uma const pode ter seus valores reatribuidos 
+
+Seja através de uma atribuição:
+
+userInfo.name = "João"
+
+Seja através de um push: 
+
+technologies.push('React');
