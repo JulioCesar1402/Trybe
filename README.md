@@ -56,3 +56,17 @@ technologies.push('React');
 * Utilizar console.log(`Welcome ${myName}!`);
 * não esquecer de usar `` no lugar de '' 
 * e, por fim, não é mais necessario o sudo de \n para quebrar linha
+
+# Arrow functions 
+* Recomendada principalmente para momentos em que não sera necessario reutilizar uma função
+
+* Criar uma função da seguinte forma é equivalente a uma função 'convencional' - 02:07
+
+  * const printName = function () {}
+* Mas, também tem um outro jeito, no caso, com a arrow: 
+
+  * const printName = () => {}
+  * const soma = (num1, num2) => num1 + num2;
+
+## botando em pratica - 04:46
+* quando for usar um objeto, colorque-o entre "()"
