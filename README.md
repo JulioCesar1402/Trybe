@@ -7,3 +7,5 @@ Um espaço para armazenar dos exercicios da trybe
 * Independente de como for atribuida a variavel, não é possivel chamá-la fora a função
 
 * O uso do var pode causar em fasamento do escolpo e por isso foi criado o let - 05:37
+
+* const é um valor constante, não podendo ser mudado por um for
