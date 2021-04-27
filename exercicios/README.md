@@ -1,1 +1,0 @@
-# Execução de exercícios de fixação.
