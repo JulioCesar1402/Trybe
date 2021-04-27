@@ -36,32 +36,58 @@
 
 // console.log(func("receita", "umaColher", "açucar"))
 
-const student1 = {
+// const student1 = {
+//   Html: 'Muito Bom',
+//   Css: 'Bom',
+//   JavaScript: 'Ótimo',
+//   SoftSkills: 'Ótimo',
+// };
+
+// const student2 = {
+//   Html: 'Bom',
+//   Css: 'Ótimo',
+//   JavaScript: 'Ruim',
+//   SoftSkills: 'Ótimo',
+//   Git: 'Bom', // chave adicionada
+// };
+
+
+// console.log(Object.keys(student1));
+
+
+// const listSkills = (student) => {
+//   const arrayOfSkills = Object.keys(student);
+//   for(index in arrayOfSkills) {
+//     console.log(`${arrayOfSkills[index]}, Nivel: ${student[arrayOfSkills[index]]}`);
+//   }
+// };
+// console.log('Estudante 1');
+// listSkills(student1);
+// console.log('Estudante 2');
+// listSkills(student2);
+
+
+const student = {
   Html: 'Muito Bom',
   Css: 'Bom',
   JavaScript: 'Ótimo',
-  SoftSkills: 'Ótimo',
+  SoftSkill: 'Ótimo',
 };
 
-const student2 = {
-  Html: 'Bom',
-  Css: 'Ótimo',
-  JavaScript: 'Ruim',
-  SoftSkills: 'Ótimo',
-  Git: 'Bom', // chave adicionada
-};
-
-
-console.log(Object.keys(student1));
-
-
-const listSkills = (student) => {
-  const arrayOfSkills = Object.keys(student);
-  for(index in arrayOfSkills) {
-    console.log(`${arrayOfSkills[index]}, Nivel: ${student[arrayOfSkills[index]]}`);
+const listSkillsWithFor = (student) => {
+  const skills = [];
+  for(skill in student) {
+    skills.push(student[skill]);
   }
-};
-console.log('Estudante 1');
-listSkills(student1);
-console.log('Estudante 2');
-listSkills(student2);
+
+  return skills;
+}
+
+const listSkillsWithValues = (student) => Object.values(student);
+
+
+// Sem Object.values
+console.log(listSkillsWithFor(student));
+console.log('-----------------------------------------');
+// Com Object.values
+console.log(listSkillsWithValues(student));

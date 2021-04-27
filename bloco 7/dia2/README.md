@@ -16,3 +16,9 @@
 
 
 ## Uso de `Object.values`
+* segue a mesma logica do keys, porem retorna seus valores, além de poupar bastante tempo
+```
+const student = {
+  key: value
+};
+```
