@@ -16,9 +16,24 @@
 
 
 ## Uso de `Object.values`
-* segue a mesma logica do keys, porem retorna seus valores, além de poupar bastante tempo
+* Segue a mesma logica do keys, porem retorna seus valores, além de poupar bastante tempo
 ```
 const student = {
   key: value
 };
+```
+
+## Uso de `Object.entries`
+* Em outras palavras, é a união do values e do keys. Ele é utilizado para retornar um array que armazena um array com apenas dois dados, o value e o key
+```
+EX:
+const obj = { 
+  0: 'a', 
+  1: 'b', 
+  2: 'c' 
+  };
+
+console.log(Object.entries(obj)); 
+
+// retorna: [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ]
 ```
