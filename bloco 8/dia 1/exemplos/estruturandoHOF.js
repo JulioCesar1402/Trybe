@@ -46,14 +46,42 @@ const wakeUp = () => {
   console.log('Acordando!!')
 }
 
+// const repeat = (number, func) => {
+//   for(let count = 0; count < number; count += 1){
+//     func();
+//   }
+// }
+
+
+// Crie outra função de primeira classe que tenha o retorno console.log('Bora tomar café!!') ;
+const timeToDrinkCoffee = () => {
+  console.log('Bora tomar café!!')
+}
+
 const repeat = (number, func) => {
   for(let count = 0; count < number; count += 1){
+    func()
+  }
+}
+
+// Crie mais uma função de primeira classe que tenha o retorno console.log('Partiu dormir!!') ;
+const goodNight = () => {
+  console.log('Partiu dormir!!')
+}
+
+const time = (hour, func) => {
+  if ((hour === '22h00')){
     func();
   }
 }
 
-repeat(3, wakeUp);
-
-// Crie outra função de primeira classe que tenha o retorno console.log('Bora tomar café!!') ;
-// Crie mais uma função de primeira classe que tenha o retorno console.log('Partiu dormir!!') ;
 // Desenvolva uma HOF chamada doingThings e configure esta função para que retorne a execução das funções de primeira classe que você criou nos exemplos anteriores. Exemplo:
+const doingThings = (inputText) => {
+  if((inputText === wakeUp)) repeat(3, inputText);
+  if((inputText === goodNight)) time('22h00', inputText);
+  if((inputText === timeToDrinkCoffee)) repeat(4, inputText);
+}
+
+doingThings(wakeUp);
+doingThings(timeToDrinkCoffee);
+doingThings(goodNight);
