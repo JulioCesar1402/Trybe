@@ -123,3 +123,4 @@ const obj3 = {
 
 assert.deepStrictEqual(obj1, obj2, 'os objetos devem ser igual')
 assert.notDeepStrictEqual(obj1, obj3, 'os objetos devem ser diferentes');
+
