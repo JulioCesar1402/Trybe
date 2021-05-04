@@ -111,24 +111,8 @@ const expectedResult = [
 function booksOrderedByReleaseYearDesc() {
   // escreva aqui seu código
   // Ordene os livros por data de lançamento em ordem decrescente.
-  let countYear = 0;
-  let countYear2 = 0;
-  for (let i = 0; i < books.length; i += 1) {
-    let count = books[i].releaseYear
-    if(count > 1901 && count < 2000) {
-      countYear += 1;
-    } else {
-      countYear2 += 1;
-    }
-  }
-  console.log(countYear, countYear2);
+  const orderedBook = books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear)
+  return orderedBook;
 }
 booksOrderedByReleaseYearDesc();
 // assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
-
-// let array1 = [1,2,3,4,5]
-// let array2 = ['a','b','d','g','j'];
-// for(let i = 0; i < 5; i += 1){
-//   array1[i] = array2[i];
-// }
-// console.log(array1, array2)
