@@ -69,17 +69,12 @@ function everyoneWasBornOnSecXX() {
   // escreva seu código aqui
   //Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
   
-  let countYear = 0;
-  let countYear2 = 0;
-  for (let i = 0; i < books.length; i += 1) {
-    let count = books[i].releaseYear
-    if(count > 1901 && count < 2000) {
-      countYear += 1;
-    } else {
-      countYear2 += 1;
-    }
-  }
-  console.log(countYear, countYear2);
+  const isEverywritersFromSXX = books.every((_, index, books) => {
+    const writersBirthday = books[index].author.birthYear;
+    return writersBirthday >= 1901 && writersBirthday <= 2000;
+  })
+
+  return isEverywritersFromSXX;
 }
 
 assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
