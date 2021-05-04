@@ -76,11 +76,7 @@ function formatedBookNames() {
   // escreva seu código aqui
   // Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
   // Dica: Use a função map
-  const arrayList = [];
-  books.map((_, index, books) => {
-    const booksList = books[index];
-    arraylegal.push(`${booksList.name} - ${booksList.genre} - ${booksList.author.name}`);
-  })
+  const arrayList = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
   return arrayList;
 }
 formatedBookNames();
