@@ -62,33 +62,24 @@ const books = [
     releaseYear: 1928,
   },
 ];
-// console.log(books[0].author.birthYear);
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  // Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-  // Dica: use a função find .
 
-  // for (let i = 0; i < books.length; i += 1){
-  //   if (books[i].author.birthYear === 1947) {
-  //     const writerName = books[i].author.name;
-  // //  return writerName; 
-  //     console.log(writerName);
-  //   }
-  // }
+const expectedResult = false;
 
-  // books.forEach((_, index, books) => {
-  //   const nameOfWriter = books[index].author.name;
-  //   const writerBirthday = books[index].author.birthYear;
-  //   if(writerBirthday === 1947) {
-  //     console.log(nameOfWriter);
-  // //  return nameOfWriter;
-  //   }
-  // })
-
-  const findAuthor = books.find((_, index, books) => books[index].author.birthYear === 1947);
-  const nameOfWriter2 = findAuthor.author.name;
-  // console.log(nameOfWriter2);
-  return nameOfWriter2;
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  //Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+  
+  let countYear = 0;
+  let countYear2 = 0;
+  for (let i = 0; i < books.length; i += 1) {
+    let count = books[i].releaseYear
+    if(count > 1901 && count < 2000) {
+      countYear += 1;
+    } else {
+      countYear2 += 1;
+    }
+  }
+  console.log(countYear, countYear2);
 }
-// authorBornIn1947()
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
