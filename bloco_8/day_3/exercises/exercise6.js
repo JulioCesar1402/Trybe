@@ -75,10 +75,12 @@ function oldBooks() {
   const currentYear = new Date().getFullYear();
   const booksFilteredByYear = books.filter(book => {
     const time = currentYear - book.releaseYear;
-    return time > 60
+    return time > 60;
   })
-  booksFilteredByYear.sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear);
-  return booksFilteredByYear
+  // booksFilteredByYear.sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear);
+  const booksName = booksFilteredByYear.map(book => book.name);
+  // console.log(booksName);
+  return booksName;
 }
-
-assert.deepStrictEqual(oldBooks(), expectedResult);
+oldBooks();
+// assert.deepStrictEqual(oldBooks(), expectedResult);
