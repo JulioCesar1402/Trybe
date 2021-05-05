@@ -72,7 +72,13 @@ const expectedResult = [
 function oldBooks() {
   // escreva seu código aqui
   // Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
-  
+  const currentYear = new Date().getFullYear();
+  const booksFilteredByYear = books.filter(book => {
+    const time = currentYear - book.releaseYear;
+    return time > 60
+  })
+  booksFilteredByYear.sort((obj1, obj2) => obj1.releaseYear - obj2.releaseYear);
+  return booksFilteredByYear
 }
 
 assert.deepStrictEqual(oldBooks(), expectedResult);
